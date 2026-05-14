@@ -6,8 +6,7 @@ A modern, high-performance E-commerce frontend for a restaurant built with **Nex
 
 ## 📸 Project Preview
 
-![Project Screenshot](screenshot.png)
-
+![Project Screenshot](/public/screenshot.png)
 ---
 
 ## 🚀 Tech Stack
