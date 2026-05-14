@@ -1,0 +1,53 @@
+import React from "react";
+import Menu from "./Menu";
+import Link from "next/link";
+import CartIcon from "./CartIcon";
+import Image from "next/image";
+
+const Navbar = () => {
+  const user = false; // Temporary user state
+
+  return (
+    <div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40">
+      
+      {/* LEFT LINKS - Visible on Desktop only */}
+      <div className="hidden md:flex gap-4 flex-1 font-semibold">
+        <Link href="/" className="hover:text-red-700 transition-colors">Homepage</Link>
+        <Link href="/menu" className="hover:text-red-700 transition-colors">Menu</Link>
+        <Link href="/" className="hover:text-red-700 transition-colors">Contact</Link>
+      </div>
+
+      {/* LOGO - Centered on Desktop, Left-aligned on Mobile */}
+      <div className="text-xl md:font-bold flex-1 md:text-center">
+        <Link href="/" className="tracking-tighter">Urban Crust</Link>
+      </div>
+
+      {/* MOBILE MENU - Visible on Mobile only */}
+      <div className="md:hidden">
+        <Menu />
+      </div>
+
+      {/* RIGHT LINKS - Visible on Desktop only */}
+      <div className="hidden md:flex gap-4 items-center justify-end flex-1 font-semibold">
+        
+        {/* Phone Contact Box */}
+        <div className="lg:static flex items-center gap-2 cursor-pointer bg-orange-300 px-2 py-1 rounded-md text-white text-sm">
+          <Image src="/phone.png" alt="phone" width={20} height={20} />
+          <span>123 456 78</span>
+        </div>
+
+        {/* Authentication Links */}
+        {!user ? (
+          <Link href="/login" className="hover:text-red-700 transition-colors">Login</Link>
+        ) : (
+          <Link href="/orders" className="hover:text-red-700 transition-colors">Orders</Link>
+        )}
+
+        {/* Cart Component */}
+        <CartIcon />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
