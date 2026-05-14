@@ -63,7 +63,7 @@ A modern, high-performance E-commerce frontend for a restaurant built with **Nex
 ## 👤 Author
 
 **Khalil Arian** - React Frontend Developer
-* **Portfolio:** [ecom-power-tools.netlify.app](https://ecom-power-tools.netlify.app)
-* **LinkedIn:** [linkedin.com/in/khalil-arian](https://www.linkedin.com/in/khalil-arian)
+* **Portfolio:** [ecom-power-tools.netlify.app](https://portfolio-kam.netlify.app)
+* **LinkedIn:** [linkedin.com/in/khalil-arian](https://www.linkedin.com/in/khalil-arian-dev)
 
 ---
